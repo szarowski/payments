@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: payments
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/payments
+    username: payments
+    password: payments
+
+flyway:
+  table: schema_version
+
+mockbin:
+  ribbon:
+    listOfServers: mockbin.org:80
